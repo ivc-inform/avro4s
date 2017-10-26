@@ -37,7 +37,7 @@ object GlobalPlugin extends AutoPlugin {
     )
 
     val publishingSettings = Seq(
-        //publishMavenStyle := true,
+        publishMavenStyle := true,
         publishArtifact in Test := false,
         ReleasePlugin.autoImport.releasePublishArtifactsAction := PgpKeys.publishSigned.value,
         ReleasePlugin.autoImport.releaseCrossBuild := true,
