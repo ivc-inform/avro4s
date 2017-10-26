@@ -20,7 +20,7 @@ object GlobalPlugin extends AutoPlugin {
         organization := org,
         scalaVersion := ScalaVersion,
         //crossScalaVersions := Seq("2.11.8", "2.12.1"),
-        resolvers += Resolver.mavenLocal,
+        //resolvers += Resolver.mavenLocal,
         parallelExecution in Test := false,
         scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-Ywarn-unused-import",
             "-Xfatal-warnings", "-feature", "-language:existentials"
@@ -37,7 +37,7 @@ object GlobalPlugin extends AutoPlugin {
     )
 
     val publishingSettings = Seq(
-        publishMavenStyle := true,
+        //publishMavenStyle := true,
         publishArtifact in Test := false,
         ReleasePlugin.autoImport.releasePublishArtifactsAction := PgpKeys.publishSigned.value,
         ReleasePlugin.autoImport.releaseCrossBuild := true,
