@@ -8,6 +8,7 @@ lazy val root = (project in file("."))
   .aggregate(avro4sMacros, avro4sCore, avro4sJson)
   .settings(
       inThisBuild(Seq(
+          publishMavenStyle := true,
           scalaVersion := CommonSettings.settingValues.scalaVersion,
           git.baseVersion := CommonSettings.settingValues.baseVersion,
           publishTo := {
