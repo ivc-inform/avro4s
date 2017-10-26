@@ -10,7 +10,7 @@ object GlobalPlugin extends AutoPlugin {
 
     val AvroVersion = "1.8.2"
     val ScalatestVersion = "3.0.4"
-    val ScalaVersion = "2.12.3"
+    val ScalaVersion = "2.12.4"
     val Slf4jVersion = "1.7.25"
     val Log4jVersion = "1.2.17"
 
