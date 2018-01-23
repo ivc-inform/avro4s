@@ -20,7 +20,6 @@ object CommonDeps {
     val scalaReflect = Def.setting("org.scala-lang" % "scala-reflect" % scalaVersion.value)
     val avro = "org.apache.avro" % "avro" % AvroVersion
 
-
     val json4sNative = "org.json4s" %% "json4s-native" % "3.5.3"
     val slf4jApi = "org.slf4j" % "slf4j-api" % Slf4jVersion
     val log4j = "log4j" % "log4j" % Log4jVersion % Test
